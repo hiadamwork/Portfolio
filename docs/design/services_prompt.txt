@@ -1,0 +1,494 @@
+Create the Services page for the same Full-Stack Software Developer portfolio.
+
+IMPORTANT:
+Use EXACTLY the same design language, visual identity, color palette, typography, spacing, glassmorphism, gradients, shadows, border radius, buttons, navigation, icons, lighting, animations, component library and premium SaaS aesthetic established in the Home, Projects and Project Detail pages.
+
+This page MUST look like it belongs to the exact same website.
+
+Do NOT redesign anything.
+
+Continue the exact same Design System.
+
+Style
+
+- Award-winning (Awwwards-level)
+- Apple × Linear × Vercel × Stripe × Framer aesthetic
+- Premium SaaS
+- Dark Mode
+- Modern Minimalism
+- Pixel-perfect
+- Desktop (2560x1440)
+- Large whitespace
+- Beautiful visual hierarchy
+- Premium typography
+- Soft lighting
+- Glassmorphism
+- Elegant animations
+- Professional UI
+- Extremely clean layout
+
+Color Palette
+
+Background: #09090B
+
+Surface: #111114
+
+Accent: #3B82F6
+
+Subtle purple gradients
+
+White typography
+
+Gray secondary text
+
+Soft blue glow
+
+==================================================
+NAVIGATION
+==================================================
+
+Exactly the same floating navigation bar from previous pages.
+
+Glass blur.
+
+Transparent.
+
+Floating.
+
+Services navigation highlighted.
+
+==================================================
+HERO SECTION
+==================================================
+
+Large page title
+
+Services
+
+Subtitle
+
+Helping startups, businesses and entrepreneurs build modern, scalable and high-performance software.
+
+Short paragraph
+
+I design and develop premium web applications with a strong focus on performance, scalability, user experience and maintainable architecture.
+
+Buttons
+
+Start a Project
+
+View Portfolio
+
+Small availability badge
+
+● Available for Freelance
+
+==================================================
+SERVICES GRID
+==================================================
+
+Premium responsive grid.
+
+Six elegant glass cards.
+
+Each card includes
+
+Minimal premium icon
+
+Service title
+
+Short description
+
+Technology tags
+
+Estimated delivery
+
+Hover animation
+
+Soft glow
+
+Rounded corners
+
+Glassmorphism
+
+Floating shadow
+
+Services
+
+--------------------------------------------------
+
+Modern Websites
+
+Responsive business websites optimized for performance, SEO and user experience.
+
+--------------------------------------------------
+
+Web Applications
+
+Custom React applications with scalable architecture and modern UI.
+
+--------------------------------------------------
+
+Backend Development
+
+REST APIs, authentication, databases and business logic built with Node.js or Java.
+
+--------------------------------------------------
+
+Admin Dashboards
+
+Powerful internal systems with analytics, charts, user management and reporting.
+
+--------------------------------------------------
+
+API Integration
+
+Payment gateways, authentication providers, third-party APIs and automation.
+
+--------------------------------------------------
+
+Maintenance & Support
+
+Bug fixing, optimization, feature development and long-term maintenance.
+
+==================================================
+WHY WORK WITH ME
+==================================================
+
+Beautiful section.
+
+Title
+
+Why Clients Choose Me
+
+Four premium feature cards.
+
+Clean Code
+
+Scalable Architecture
+
+Responsive Design
+
+Performance First
+
+Each card
+
+Minimal icon
+
+Short explanation
+
+Hover glow
+
+Glass background
+
+==================================================
+DEVELOPMENT PROCESS
+==================================================
+
+Professional timeline.
+
+Step 1
+
+Discovery
+
+Understand business goals and requirements.
+
+↓
+
+Step 2
+
+Planning
+
+Architecture, roadmap and technical decisions.
+
+↓
+
+Step 3
+
+UI Development
+
+Premium responsive frontend.
+
+↓
+
+Step 4
+
+Backend Development
+
+APIs, database and authentication.
+
+↓
+
+Step 5
+
+Testing
+
+Performance, security and quality assurance.
+
+↓
+
+Step 6
+
+Deployment
+
+Launch, monitoring and ongoing support.
+
+Modern vertical timeline.
+
+Elegant connectors.
+
+Animated on scroll.
+
+==================================================
+TECHNOLOGIES
+==================================================
+
+Beautiful categorized layout.
+
+Frontend
+
+React
+
+JavaScript
+
+TypeScript
+
+CSS Modules
+
+Framer Motion
+
+Backend
+
+Node.js
+
+Express
+
+Java
+
+Spring Boot
+
+REST API
+
+JWT
+
+Database
+
+PostgreSQL
+
+SQLite
+
+MySQL
+
+Prisma
+
+Tools
+
+Git
+
+GitHub
+
+Docker
+
+Vercel
+
+Railway
+
+Linux
+
+Every technology displayed as elegant floating glass pill.
+
+Hover animations.
+
+Soft glow.
+
+==================================================
+FEATURED SERVICE
+==================================================
+
+Large premium showcase.
+
+Title
+
+Custom React Applications
+
+Large realistic application preview.
+
+Modern dashboard screenshot.
+
+Professional description.
+
+Technology badges.
+
+Buttons
+
+Let's Build One
+
+View Related Projects
+
+==================================================
+WORKFLOW
+==================================================
+
+Horizontal premium cards.
+
+Communication
+
+Transparent updates throughout development.
+
+Quality
+
+Modern coding standards and testing.
+
+Delivery
+
+Reliable and on-time project completion.
+
+Support
+
+Continuous improvements after launch.
+
+Beautiful icons.
+
+Glass cards.
+
+Hover effects.
+
+==================================================
+FAQ
+==================================================
+
+Elegant accordion section.
+
+Questions
+
+How long does a project take?
+
+Which technologies do you use?
+
+Do you build responsive websites?
+
+Can you maintain existing projects?
+
+Do you provide source code?
+
+Animated expansion.
+
+Minimal icons.
+
+==================================================
+CLIENT EXPECTATIONS
+==================================================
+
+Premium comparison cards.
+
+What You Can Expect
+
+✔ Clean architecture
+
+✔ Responsive design
+
+✔ Modern UI
+
+✔ Fast loading
+
+✔ SEO friendly
+
+✔ Maintainable code
+
+✔ Documentation
+
+✔ Reliable communication
+
+==================================================
+CALL TO ACTION
+==================================================
+
+Large premium banner.
+
+Background
+
+Soft animated blue-purple gradient.
+
+Glassmorphism.
+
+Floating light effects.
+
+Headline
+
+Let's Build Something Amazing Together
+
+Subtitle
+
+Whether you need a landing page, business website, SaaS platform or custom web application, I'm ready to help bring your ideas to life.
+
+Buttons
+
+Start a Project
+
+Contact Me
+
+==================================================
+FOOTER
+==================================================
+
+Exactly the same footer from previous pages.
+
+==================================================
+MICRO INTERACTIONS
+==================================================
+
+Magnetic buttons
+
+Cursor glow
+
+Glass reflections
+
+Floating cards
+
+Soft parallax
+
+Animated gradients
+
+Scroll reveal animations
+
+Premium hover effects
+
+Smooth page transitions
+
+Elegant shadows
+
+Depth
+
+==================================================
+DESIGN REQUIREMENTS
+==================================================
+
+The page should feel like a premium digital agency website combined with a high-end personal developer portfolio.
+
+Everything should communicate:
+
+Professionalism
+
+Trust
+
+Technical expertise
+
+Attention to detail
+
+Premium frontend craftsmanship
+
+Modern backend engineering
+
+Scalable software architecture
+
+The visitor should immediately feel confident hiring this developer.
+
+Maintain 100% visual consistency with all previous pages.
+
+No template appearance.
+
+No generic layouts.
+
+No unnecessary decorations.
+
+Every section should feel intentional, elegant and premium.

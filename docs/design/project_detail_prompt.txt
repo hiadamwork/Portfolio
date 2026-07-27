@@ -1,0 +1,518 @@
+Create the Project Detail page for the same Full-Stack Software Developer portfolio.
+
+IMPORTANT:
+Use EXACTLY the same design language, visual identity, typography, spacing system, color palette, gradients, glassmorphism, border radius, buttons, navigation, shadows, lighting, animations, icons and premium SaaS component library as the Home and Projects pages.
+
+This page MUST look like it belongs to the exact same website.
+
+Do NOT redesign anything.
+
+Continue the exact same Design System.
+
+Style
+
+- Award-winning (Awwwards-level)
+- Apple × Linear × Vercel × Stripe × Framer aesthetic
+- Dark Mode
+- Minimal
+- Premium SaaS
+- Pixel-perfect
+- Desktop (2560x1440)
+- Extremely clean
+- Elegant
+- Soft lighting
+- High-end UI
+- Large whitespace
+- Glassmorphism
+- Premium typography
+- Beautiful visual hierarchy
+
+Color Palette
+
+Background: #09090B
+
+Surface: #111114
+
+Accent: #3B82F6
+
+Soft purple gradients
+
+White typography
+
+Gray secondary text
+
+Soft blue glow
+
+==================================================
+NAVIGATION
+==================================================
+
+Exactly the same floating navigation bar from previous pages.
+
+Glass blur.
+
+Floating.
+
+Transparent.
+
+Projects navigation highlighted.
+
+==================================================
+PROJECT HERO
+==================================================
+
+Large hero section.
+
+Left side
+
+Large project title
+
+Example:
+
+AI Project Management Platform
+
+Short professional description.
+
+A scalable SaaS platform designed to simplify project management using modern frontend architecture and backend APIs.
+
+Technology badges
+
+React
+
+TypeScript
+
+Node.js
+
+Express
+
+PostgreSQL
+
+Prisma
+
+REST API
+
+JWT
+
+Buttons
+
+Live Demo
+
+GitHub
+
+View Case Study
+
+Right side
+
+Large premium application preview.
+
+Beautiful dashboard screenshot.
+
+Soft reflections.
+
+Rounded corners.
+
+Floating.
+
+Glass effect.
+
+==================================================
+PROJECT INFORMATION
+==================================================
+
+Four premium information cards.
+
+Role
+
+Full Stack Developer
+
+Duration
+
+3 Months
+
+Platform
+
+Web Application
+
+Status
+
+Production Ready
+
+Cards use glassmorphism.
+
+Soft glow.
+
+Hover animation.
+
+==================================================
+PROJECT OVERVIEW
+==================================================
+
+Beautiful content section.
+
+Headline
+
+Project Overview
+
+Explain
+
+Problem
+
+Solution
+
+Goals
+
+Result
+
+Professional layout.
+
+Large readable typography.
+
+==================================================
+FEATURES
+==================================================
+
+Modern feature grid.
+
+Cards.
+
+Authentication
+
+Dashboard
+
+Analytics
+
+Responsive Design
+
+Notifications
+
+Dark Mode
+
+REST API
+
+Admin Panel
+
+Each card includes
+
+Minimal icon
+
+Short description
+
+Hover glow
+
+Glass background
+
+==================================================
+SCREENSHOTS
+==================================================
+
+Large gallery.
+
+Desktop screenshots.
+
+Tablet screenshots.
+
+Mobile screenshots.
+
+Carousel style.
+
+Beautiful rounded corners.
+
+Floating shadows.
+
+Soft reflections.
+
+==================================================
+ARCHITECTURE
+==================================================
+
+Professional architecture section.
+
+Visual architecture diagram.
+
+Frontend
+
+↓
+
+REST API
+
+↓
+
+Backend
+
+↓
+
+Database
+
+↓
+
+Cloud
+
+Modern minimal diagram.
+
+Beautiful lines.
+
+Premium icons.
+
+Glowing nodes.
+
+==================================================
+TECH STACK
+==================================================
+
+Split into categories.
+
+Frontend
+
+React
+
+TypeScript
+
+CSS Modules
+
+React Router
+
+Framer Motion
+
+Backend
+
+Node.js
+
+Express
+
+JWT
+
+Prisma
+
+REST API
+
+Database
+
+PostgreSQL
+
+Redis
+
+Tools
+
+Git
+
+GitHub
+
+Docker
+
+Vercel
+
+Railway
+
+Every technology displayed as premium floating pill.
+
+==================================================
+DEVELOPMENT PROCESS
+==================================================
+
+Timeline.
+
+Planning
+
+↓
+
+UI Design
+
+↓
+
+Development
+
+↓
+
+Testing
+
+↓
+
+Deployment
+
+↓
+
+Maintenance
+
+Modern vertical timeline.
+
+Animated.
+
+==================================================
+CHALLENGES
+==================================================
+
+Professional section.
+
+Title
+
+Challenges & Solutions
+
+Three elegant cards.
+
+Challenge
+
+Architecture
+
+Solution
+
+Performance
+
+Optimization
+
+Each card explains
+
+Problem
+
+Thinking
+
+Implementation
+
+Result
+
+==================================================
+PERFORMANCE
+==================================================
+
+Beautiful metrics dashboard.
+
+Lighthouse
+
+100
+
+Performance
+
+99
+
+Accessibility
+
+100
+
+SEO
+
+100
+
+Best Practices
+
+100
+
+Cards have animated counters.
+
+Premium appearance.
+
+==================================================
+PROJECT VIDEO
+==================================================
+
+Large embedded demo video section.
+
+Modern video player.
+
+Rounded corners.
+
+Glass overlay.
+
+Play button centered.
+
+==================================================
+RELATED PROJECTS
+==================================================
+
+Three premium project cards.
+
+Same style as Projects page.
+
+Hover animations.
+
+Live Demo
+
+GitHub
+
+==================================================
+CALL TO ACTION
+==================================================
+
+Large premium CTA.
+
+Title
+
+Interested in a similar project?
+
+Subtitle
+
+Let's create something exceptional together.
+
+Buttons
+
+Start a Project
+
+Contact Me
+
+Beautiful glowing background.
+
+Glassmorphism.
+
+==================================================
+FOOTER
+==================================================
+
+Exactly the same footer from previous pages.
+
+==================================================
+MICRO INTERACTIONS
+==================================================
+
+Floating cards
+
+Soft parallax
+
+Cursor glow
+
+Magnetic buttons
+
+Smooth hover animations
+
+Page reveal animations
+
+Scroll animations
+
+Animated gradients
+
+Glass reflections
+
+Soft shadows
+
+Depth
+
+==================================================
+DESIGN REQUIREMENTS
+==================================================
+
+This page should feel like a premium SaaS product presentation, not a portfolio template.
+
+Every section should communicate:
+
+Attention to detail
+
+Professional engineering
+
+Scalable architecture
+
+Clean code
+
+Modern frontend craftsmanship
+
+Premium UI/UX
+
+The visitor should immediately trust the developer's technical abilities.
+
+The page should look like it was designed by the same senior product designer who created the Home and Projects pages.
+
+Maintain 100% visual consistency with the existing design system.
+
+No generic layouts.
+
+No template appearance.
+
+No unnecessary decorations.
+
+Everything should feel intentional, premium and polished.

@@ -1,0 +1,380 @@
+Create the Projects page for the same Full-Stack Software Developer portfolio.
+
+IMPORTANT:
+Use EXACTLY the same design language, visual identity, spacing system, typography, colors, glassmorphism, shadows, gradients, border radius, button styles, navigation, lighting, component system and premium SaaS aesthetic as the Home page.
+
+The Projects page must look like it belongs to the exact same website.
+
+Style:
+- Award-winning (Awwwards-level)
+- Apple × Linear × Vercel × Stripe × Framer aesthetic
+- Dark mode
+- Premium UI
+- Modern minimalism
+- Pixel-perfect
+- Desktop (2560x1440)
+- Large whitespace
+- Soft glowing gradients
+- Glassmorphism
+- Premium typography
+- Elegant animations
+- Extremely clean layout
+
+Color Palette:
+Background: #09090B
+
+Surface: #111114
+
+Accent: #3B82F6
+
+Subtle purple gradients
+
+White typography
+
+Gray secondary text
+
+Soft blue glow
+
+==================================================
+NAVIGATION
+==================================================
+
+Exactly the same floating navigation bar from the Home page.
+
+Transparent.
+
+Glass blur.
+
+Floating.
+
+Same spacing.
+
+Same icons.
+
+Same Download CV button.
+
+Projects item highlighted as active.
+
+==================================================
+HEADER
+==================================================
+
+Large title
+
+Featured Projects
+
+Small subtitle
+
+A collection of carefully crafted applications focused on performance, user experience and scalable architecture.
+
+Below:
+
+Animated project statistics.
+
+12+
+
+Completed Projects
+
+5+
+
+Technologies
+
+100%
+
+Responsive
+
+Fast Loading
+
+==================================================
+FEATURED PROJECT
+==================================================
+
+Large premium showcase card.
+
+Very wide.
+
+Rounded corners.
+
+Glass effect.
+
+Large project screenshot.
+
+Modern dashboard application.
+
+Left:
+
+Project name
+
+Description
+
+Technology badges
+
+React
+
+Node.js
+
+PostgreSQL
+
+REST API
+
+JWT
+
+Buttons
+
+Live Demo
+
+GitHub
+
+Case Study
+
+Right:
+
+Beautiful desktop screenshot.
+
+Hover glow.
+
+Soft reflections.
+
+==================================================
+PROJECT GRID
+==================================================
+
+Responsive grid.
+
+Six premium project cards.
+
+Every card includes:
+
+Large realistic screenshot
+
+Project title
+
+Small description
+
+Technology badges
+
+React
+
+Java
+
+Spring Boot
+
+Express
+
+Node.js
+
+PostgreSQL
+
+SQLite
+
+CSS
+
+TypeScript
+
+Buttons
+
+Live
+
+GitHub
+
+Case Study
+
+Each card has
+
+Glassmorphism
+
+Hover elevation
+
+Glow
+
+3D tilt
+
+Smooth shadows
+
+Premium spacing
+
+==================================================
+FILTER BAR
+==================================================
+
+Beautiful floating filter pills.
+
+All
+
+React
+
+Java
+
+Backend
+
+Frontend
+
+Desktop
+
+Open Source
+
+Selected filter glows softly.
+
+==================================================
+CASE STUDY PREVIEW
+==================================================
+
+A horizontal premium section.
+
+Title
+
+How I build software.
+
+Three cards.
+
+Planning
+
+Architecture
+
+Development
+
+Each card has
+
+Minimal icon
+
+Short description
+
+Beautiful glass effect
+
+==================================================
+TECH STACK
+==================================================
+
+Beautiful modern section.
+
+Floating technology pills.
+
+React
+
+JavaScript
+
+TypeScript
+
+Java
+
+Spring Boot
+
+Node.js
+
+Express
+
+PostgreSQL
+
+SQLite
+
+Git
+
+GitHub
+
+Docker
+
+REST API
+
+JWT
+
+CSS Modules
+
+Hover animation.
+
+Soft glow.
+
+==================================================
+GITHUB SECTION
+==================================================
+
+Modern GitHub contribution preview.
+
+Repository cards.
+
+Latest commits.
+
+Contribution graph.
+
+Minimal design.
+
+Looks integrated into the page.
+
+==================================================
+CALL TO ACTION
+==================================================
+
+Large premium banner.
+
+Title
+
+Have an idea?
+
+Let's build something amazing together.
+
+Buttons
+
+Start a Project
+
+Contact Me
+
+Background:
+
+Soft blue gradient
+
+Glassmorphism
+
+Floating shapes
+
+==================================================
+FOOTER
+==================================================
+
+Exactly the same footer as Home.
+
+==================================================
+MICRO INTERACTIONS
+==================================================
+
+Floating cards
+
+Magnetic buttons
+
+Smooth hover animations
+
+Cursor glow
+
+Glass reflections
+
+Subtle parallax
+
+Animated gradients
+
+Soft shadows
+
+Premium transitions
+
+==================================================
+DESIGN REQUIREMENTS
+==================================================
+
+Every project card should look like a premium SaaS product.
+
+No generic portfolio cards.
+
+No cheap UI.
+
+No template look.
+
+Everything should communicate:
+
+High-end software engineering.
+
+Premium frontend craftsmanship.
+
+Attention to detail.
+
+Trustworthiness.
+
+Professionalism.
+
+The entire page should feel like it belongs to the exact same design system as the Home page, as if both pages were designed by the same senior product designer.
