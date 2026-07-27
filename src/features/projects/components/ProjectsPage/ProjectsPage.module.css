@@ -1,0 +1,312 @@
+.page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 8rem 0 4rem;
+    background: var(--color-background);
+    isolation: isolate;
+}
+
+.gridBackground {
+    position: absolute;
+    inset: 0;
+    z-index: -5;
+    background-image:
+        linear-gradient(rgb(255 255 255 / 4%) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(255 255 255 / 4%) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    mask-image: radial-gradient(circle at 50% 34%, black, transparent 74%);
+}
+
+.leftGlow,
+.rightGlow {
+    position: absolute;
+    z-index: -4;
+    border-radius: 50%;
+    filter: blur(4.5rem);
+    pointer-events: none;
+}
+
+.leftGlow {
+    top: -8rem;
+    left: -7rem;
+    width: 28rem;
+    height: 26rem;
+    background: rgb(59 130 246 / 58%);
+}
+
+.rightGlow {
+    top: 7rem;
+    right: -7rem;
+    width: 21rem;
+    height: 21rem;
+    background: linear-gradient(135deg, rgb(34 211 238 / 70%), rgb(139 92 246 / 64%));
+}
+
+.container {
+    display: grid;
+    gap: var(--space-10);
+}
+
+.hero {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-4);
+    max-width: 54rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 4vw, 3.6rem);
+    font-weight: 800;
+}
+
+.hero p {
+    max-width: 40rem;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1.5rem, 4vw, 4rem);
+    margin-top: var(--space-4);
+}
+
+.stat {
+    display: grid;
+    justify-items: center;
+    gap: 0.15rem;
+}
+
+.stat strong {
+    font-size: 1.65rem;
+    line-height: 1;
+    color: #8fb7ff;
+}
+
+.stat span {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(24rem, 0.9fr);
+    gap: clamp(3rem, 7vw, 7rem);
+}
+
+.leftColumn,
+.rightColumn {
+    display: grid;
+    align-content: start;
+    gap: var(--space-8);
+}
+
+.featuredCard {
+    display: grid;
+    grid-template-columns: minmax(0, 0.88fr) minmax(17rem, 1fr);
+    align-items: center;
+    gap: var(--space-8);
+    padding: var(--space-8);
+    border: 1px solid rgb(147 197 253 / 56%);
+    border-radius: var(--radius-xl);
+    background:
+        radial-gradient(circle at 82% 46%, rgb(139 92 246 / 24%), transparent 16rem),
+        linear-gradient(180deg, rgb(255 255 255 / 11%), rgb(255 255 255 / 4%));
+    box-shadow: 0 0 2.5rem rgb(59 130 246 / 26%), inset 0 1px 0 rgb(255 255 255 / 12%);
+}
+
+.featuredContent {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.featuredContent h2 {
+    font-size: 1.55rem;
+}
+
+.featuredContent p {
+    font-size: 0.95rem;
+}
+
+.tagList,
+.cardActions,
+.stackPills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.featuredMockup {
+    transform: perspective(56rem) rotateY(-8deg);
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.filter,
+.activeFilter {
+    min-height: 2rem;
+    padding: 0 var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-secondary);
+    background: rgb(255 255 255 / 7%);
+    cursor: pointer;
+    transition: background var(--transition-base), color var(--transition-base);
+}
+
+.activeFilter,
+.filter:hover {
+    color: var(--color-text-primary);
+    background: rgb(59 130 246 / 32%);
+    box-shadow: 0 0 1.5rem rgb(59 130 246 / 22%);
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.sectionHeader {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-2);
+    text-align: center;
+}
+
+.sectionHeader span {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.sectionHeader h2 {
+    font-size: clamp(1.65rem, 2.8vw, 2.25rem);
+}
+
+.caseStudy {
+    display: grid;
+    gap: var(--space-6);
+    padding: var(--space-8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, rgb(59 130 246 / 18%), rgb(255 255 255 / 5%));
+}
+
+.processGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.processCard,
+.githubCard {
+    display: grid;
+    gap: var(--space-3);
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: linear-gradient(180deg, rgb(255 255 255 / 10%), rgb(255 255 255 / 4%));
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+}
+
+.processIcon {
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: var(--radius-sm);
+    color: #93c5fd;
+    background: rgb(59 130 246 / 18%);
+}
+
+.processCard h3,
+.githubCard h3 {
+    font-size: 1rem;
+}
+
+.processCard p,
+.githubCard p,
+.githubCard li {
+    font-size: 0.84rem;
+    line-height: 1.45;
+}
+
+.stackSection {
+    display: grid;
+    justify-items: center;
+}
+
+.githubGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.githubCard ul {
+    display: grid;
+    gap: var(--space-2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: var(--color-text-secondary);
+}
+
+.githubCard a {
+    font-size: 0.84rem;
+    color: var(--color-primary-soft);
+}
+
+.commitGraph {
+    display: flex;
+    align-items: end;
+    height: 4.5rem;
+    gap: 0.2rem;
+}
+
+.commitGraph span {
+    flex: 1;
+    height: var(--height);
+    min-height: 0.5rem;
+    border-radius: 0.2rem;
+    background: linear-gradient(180deg, #4ade80, #16a34a);
+}
+
+@media (max-width: 1180px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 820px) {
+    .featuredCard,
+    .processGrid,
+    .githubGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .page {
+        padding-top: 7rem;
+    }
+
+    .featuredCard,
+    .caseStudy {
+        padding: var(--space-5);
+    }
+
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+}

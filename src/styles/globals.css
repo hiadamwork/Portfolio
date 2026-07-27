@@ -1,0 +1,14 @@
+body {
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 6% 6%, rgb(59 130 246 / 48%), transparent 18rem),
+        radial-gradient(circle at 78% 28%, rgb(139 92 246 / 32%), transparent 20rem),
+        var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+}
+
+::selection {
+    color: var(--color-text-primary);
+    background: rgb(59 130 246 / 45%);
+}

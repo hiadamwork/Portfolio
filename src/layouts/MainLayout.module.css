@@ -1,0 +1,9 @@
+.layout {
+    position: relative;
+    min-height: 100vh;
+    isolation: isolate;
+}
+
+.main {
+    min-height: 100vh;
+}

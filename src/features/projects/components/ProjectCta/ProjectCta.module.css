@@ -1,0 +1,53 @@
+.cta {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: var(--space-3);
+    overflow: hidden;
+    padding: var(--space-8);
+    border: 1px solid rgb(147 197 253 / 42%);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    background:
+        linear-gradient(135deg, rgb(125 211 252 / 72%), rgb(59 130 246 / 78%) 48%, rgb(139 92 246 / 68%)),
+        rgb(59 130 246 / 28%);
+    box-shadow: 0 1.5rem 5rem rgb(59 130 246 / 28%), inset 0 1px 0 rgb(255 255 255 / 28%);
+}
+
+.cta::after {
+    position: absolute;
+    right: -1rem;
+    bottom: 1rem;
+    width: 6rem;
+    height: 6rem;
+    content: "";
+    background: radial-gradient(circle, rgb(255 255 255 / 72%), transparent 58%);
+    transform: rotate(45deg);
+}
+
+.glow {
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(circle at 20% 10%, rgb(255 255 255 / 32%), transparent 24%);
+    pointer-events: none;
+}
+
+.cta h2 {
+    position: relative;
+    max-width: 42rem;
+    font-size: clamp(1.8rem, 3vw, 2.35rem);
+    line-height: 1.14;
+}
+
+.cta p {
+    position: relative;
+    color: rgb(255 255 255 / 78%);
+}
+
+.actions {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-3);
+}
