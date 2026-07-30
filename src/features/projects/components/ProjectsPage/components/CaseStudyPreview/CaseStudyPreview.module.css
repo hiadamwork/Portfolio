@@ -1,0 +1,73 @@
+.caseStudy {
+    display: grid;
+    gap: var(--space-6);
+    padding: var(--space-8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, rgb(59 130 246 / 18%), rgb(255 255 255 / 5%));
+    overflow: hidden; 
+}
+
+.processSlider {
+    display: flex;
+    gap: var(--space-4);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none; 
+    padding-bottom: var(--space-2); 
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.processSlider::-webkit-scrollbar {
+    display: none;
+}
+
+.processSlider.isDragging {
+    cursor: grabbing;
+    scroll-behavior: auto; 
+}
+
+.processCard {
+    flex: 0 0 280px;
+    display: grid;
+    gap: var(--space-3);
+    padding: var(--space-5);
+}
+
+.processIcon {
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.processIcon svg {
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+.processCard h3 {
+    font-size: 1rem;
+}
+
+.processCard p {
+    font-size: 0.84rem;
+    line-height: 1.45;
+}
+
+@media (max-width: 560px) {
+    .caseStudy {
+        padding: var(--space-5);
+    }
+    
+    .processCard {
+        flex: 0 0 240px;  
+    }
+}

@@ -7,6 +7,25 @@ export const heroTechnologies = [
     { label: 'PostgreSQL', tone: 'blue' },
 ]
 
+export const homeHeroContent = {
+    eyebrow: 'Full-Stack Software Developer',
+    titleHighlight: "Hi, I'm Adam.",
+    title: 'I build modern web applications that users love.',
+    description:
+        'Full-stack software developer specializing in React, Java and modern backend systems. I create fast, scalable and beautiful digital experiences for startups, businesses and individuals.',
+    primaryAction: {
+        label: 'Hire Me',
+        href: '/contact',
+    },
+    secondaryAction: {
+        label: 'View Projects',
+        href: '/projects',
+    },
+    availability: 'Available for Freelance',
+    technologyLabel: 'Technology Badges',
+    scrollLabel: 'Scroll to explore',
+}
+
 export const floatingLabels = [
     { label: 'React', className: 'labelReact' },
     { label: 'API', className: 'labelApi' },

@@ -1,0 +1,56 @@
+.faqSection,
+.expectationsSection {
+    display: grid;
+    align-content: start;
+}
+
+.faqSection {
+    gap: var(--space-3);
+}
+
+.expectationsSection {
+    gap: var(--space-4);
+}
+
+.faqSection h2,
+.expectationsSection h2 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.accordion summary {
+    cursor: pointer;
+    font-size: 0.86rem;
+    color: var(--color-text-primary);
+}
+
+.accordion div {
+    font-size: 0.8rem;
+}
+
+.expectationCards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.expectationsList {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+}
+
+.expectationsList span {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+}
+
+.expectationsList span::before {
+    content: "\2022 ";
+    color: var(--color-primary-soft);
+}
+
+@media (max-width: 560px) {
+    .expectationCards {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,22 @@
+.gallery {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.gallery h2 {
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.galleryTrack {
+    display: grid;
+    grid-template-columns: 0.75fr 1.35fr 0.75fr;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+@media (max-width: 760px) {
+    .galleryTrack {
+        grid-template-columns: 1fr;
+    }
+}

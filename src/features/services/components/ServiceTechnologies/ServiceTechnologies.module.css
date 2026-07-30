@@ -1,0 +1,14 @@
+.technologiesSection {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.technologiesSection h2 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.technologyPills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}

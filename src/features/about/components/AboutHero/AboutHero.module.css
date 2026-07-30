@@ -1,0 +1,95 @@
+.hero {
+    display: grid;
+    gap: var(--space-5);
+}
+
+.subtitle {
+    max-width: 40rem;
+    font-size: 1.05rem;
+    color: var(--color-text-secondary);
+}
+
+.profileRow {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.portrait {
+    position: relative;
+    display: grid;
+    height: 12rem;
+    place-items: center;
+    overflow: hidden;
+    border: 1px solid rgb(147 197 253 / 58%);
+    border-radius: var(--radius-lg);
+    background:
+        radial-gradient(circle at 50% 22%, rgb(255 255 255 / 28%), transparent 6rem),
+        linear-gradient(135deg, rgb(59 130 246 / 28%), rgb(139 92 246 / 26%));
+    box-shadow: 0 0 2rem rgb(59 130 246 / 28%), 0 0 2rem rgb(139 92 246 / 20%);
+}
+
+.face {
+    position: absolute;
+    top: 1.7rem;
+    width: 5rem;
+    height: 5.4rem;
+    border-radius: 48% 48% 44% 44%;
+    background: linear-gradient(180deg, #f1c7a8, #c78f72);
+}
+
+.body {
+    position: absolute;
+    bottom: -1rem;
+    width: 8rem;
+    height: 6.3rem;
+    border-radius: 4rem 4rem 0 0;
+    background: linear-gradient(135deg, #111827, #1e3a8a);
+}
+
+.introCopy {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.introCopy h2 {
+    max-width: 32rem;
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    line-height: 1.2;
+}
+
+.introCopy p {
+    font-size: 0.9rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.availability {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: 0 var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-secondary);
+    background: rgb(255 255 255 / 7%);
+}
+
+.availability span {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+@media (max-width: 820px) {
+    .profileRow {
+        grid-template-columns: 1fr;
+    }
+}

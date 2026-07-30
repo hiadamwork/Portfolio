@@ -1,0 +1,38 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    background: rgb(0 0 0 / 52%);
+    backdrop-filter: blur(0.75rem);
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: min(100%, 24rem);
+    padding: var(--space-6);
+    border: 1px solid var(--color-border);
+    background: var(--color-background-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.header h2 {
+    font-size: 1.25rem;
+}

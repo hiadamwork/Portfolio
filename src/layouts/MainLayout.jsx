@@ -1,6 +1,4 @@
-import { SiteFooter } from '@/components/layout/SiteFooter'
-import { SiteHeader } from '@/components/layout/SiteHeader'
-
+import { SiteFooter, SiteHeader } from '@/components'
 import styles from './MainLayout.module.css'
 
 export function MainLayout({ children }) {

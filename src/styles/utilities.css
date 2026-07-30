@@ -9,3 +9,25 @@
     white-space: nowrap;
     border: 0;
 }
+
+.glowBorder::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    border-radius: inherit; 
+    padding: 2px; 
+
+    background: linear-gradient(
+        135deg, 
+        rgb(59 130 246 / 90%), 
+        rgb(168 85 247 / 80%)   
+    );
+
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+            
+    pointer-events: none; 
+}

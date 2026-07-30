@@ -1,0 +1,63 @@
+.workflowSection {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.workflowSection h2 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    text-align: left;
+}
+
+.workflowGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.workflowCard {
+    display: grid;
+    gap: var(--space-2);
+    min-height: 4.2rem;
+    padding: var(--space-3);
+}
+
+.workflowCard:hover {
+    border-color: rgb(147 197 253 / 48%);
+}
+
+.workflowCard h3 {
+    font-size: 0.72rem;
+}
+
+.workflowCard p {
+    font-size: 0.58rem;
+    line-height: 1.35;
+}
+
+.workflowIcon {
+    display: grid;
+    width: 1.6rem;
+    height: 1.6rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.workflowIcon svg {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+@media (max-width: 1180px) {
+    .workflowGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .workflowGrid {
+        grid-template-columns: 1fr;
+    }
+}

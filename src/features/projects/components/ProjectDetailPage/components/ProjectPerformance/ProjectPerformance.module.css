@@ -1,0 +1,44 @@
+.performance {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.performance h2 {
+    font-size: 1.05rem;
+}
+
+.performanceGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-2);
+}
+
+.metricCard {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3);
+}
+
+.metricCard strong {
+    display: grid;
+    width: 2.55rem;
+    height: 2.55rem;
+    font-size: 0.85rem;
+    place-items: center;
+    border: 2px solid var(--color-success);
+    border-radius: 50%;
+    color: #86efac;
+}
+
+.metricCard span {
+    font-size: 0.62rem;
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .performanceGrid {
+        grid-template-columns: 1fr;
+    }
+}

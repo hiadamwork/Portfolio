@@ -1,0 +1,44 @@
+.challenges {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.challenges h2 {
+    font-size: 1.15rem;
+}
+
+.challengeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.challengeCard {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-3);
+}
+
+.challengeCard h3 {
+    font-size: 0.82rem;
+}
+
+.challengeCard p {
+    font-size: 0.7rem;
+    line-height: 1.35;
+}
+
+.challengeCard span {
+    font-size: 0.68rem;
+    color: #86efac;
+}
+
+.compact .challengeGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+    .challengeGrid {
+        grid-template-columns: 1fr;
+    }
+}

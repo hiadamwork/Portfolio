@@ -1,0 +1,97 @@
+.optionSection {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.optionSection h2,
+.processCard h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.optionGrid,
+.budgetGrid {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.optionGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.budgetProcess {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    gap: var(--space-5);
+}
+
+.budgetGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.optionCard {
+    display: grid;
+    gap: var(--space-2);
+    min-height: 4.2rem;
+    padding: var(--space-3);
+}
+
+.optionCard strong {
+    font-size: 0.72rem;
+}
+
+.optionIcon {
+    display: grid;
+    width: 1.8rem;
+    height: 1.8rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.optionIcon svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.processCard {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.timeline {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline li {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+}
+
+.stepIndex {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-primary-soft);
+}
+
+@media (max-width: 1180px) {
+    .budgetProcess {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .optionGrid,
+    .budgetGrid {
+        grid-template-columns: 1fr;
+    }
+}

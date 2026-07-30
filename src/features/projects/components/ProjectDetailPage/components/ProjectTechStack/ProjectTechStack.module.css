@@ -1,0 +1,33 @@
+.techStack {
+    display: grid;
+    gap: var(--space-4);
+    justify-items: center;
+}
+
+.techStack h2 {
+    font-size: 1.15rem;
+}
+
+.stackGroups {
+    display: grid;
+    gap: var(--space-2);
+    justify-items: center;
+}
+
+.stackGroup {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-1);
+}
+
+.stackGroup span {
+    font-size: 0.68rem;
+    color: var(--color-text-muted);
+}
+
+.stackGroup div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+}

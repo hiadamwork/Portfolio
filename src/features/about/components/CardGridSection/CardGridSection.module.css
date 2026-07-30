@@ -1,0 +1,42 @@
+.section {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.section h2 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.default,
+.compact,
+.wide {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.default {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wide {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1180px) {
+    .default,
+    .wide {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .default,
+    .compact,
+    .wide {
+        grid-template-columns: 1fr;
+    }
+}

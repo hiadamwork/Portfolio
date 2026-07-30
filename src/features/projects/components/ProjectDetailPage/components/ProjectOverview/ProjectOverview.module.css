@@ -1,0 +1,71 @@
+.overview {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(18rem, 1fr);
+    gap: var(--space-6);
+}
+
+.overview > div {
+    display: grid;
+    align-content: start;
+    gap: var(--space-3);
+}
+
+.overview h2 {
+    font-size: 1.3rem;
+}
+
+.overview article {
+    display: grid;
+    gap: var(--space-2);
+}
+
+.overview h3,
+.featureCard h3 {
+    font-size: 0.95rem;
+}
+
+.overview p,
+.featureCard p {
+    font-size: 0.74rem;
+    line-height: 1.35;
+}
+
+.featureGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.featureCard {
+    display: grid;
+    gap: var(--space-3);
+    padding: var(--space-4);
+}
+
+.featureIcon {
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.featureIcon svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+@media (max-width: 1180px) {
+    .overview {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .featureGrid {
+        grid-template-columns: 1fr;
+    }
+}

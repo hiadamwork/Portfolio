@@ -1,0 +1,128 @@
+.contactCard,
+.availabilityCard,
+.messagesCard {
+    display: grid;
+}
+
+.contactCard {
+    gap: var(--space-3);
+    padding: var(--space-5);
+    border-color: rgb(147 197 253 / 42%);
+    box-shadow: 0 0 2.5rem rgb(59 130 246 / 20%), inset 0 1px 0 rgb(255 255 255 / 10%);
+}
+
+.contactMethod {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.contactMethod p {
+    font-size: 0.8rem;
+}
+
+.methodIcon,
+.messagesIcon {
+    display: grid;
+    flex: 0 0 auto;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.methodIcon svg,
+.messagesIcon svg,
+.socialLink svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-border);
+}
+
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    background: rgb(255 255 255 / 5%);
+}
+
+.statusRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.availabilityCard,
+.messagesCard {
+    gap: var(--space-2);
+    padding: var(--space-5);
+}
+
+.availabilityCard {
+    border-color: rgb(52 211 153 / 35%);
+    background: linear-gradient(180deg, rgb(52 211 153 / 12%), rgb(255 255 255 / 4%));
+}
+
+.availabilityLabel {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.availabilityStatus {
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    color: #6ee7b7;
+    background: rgb(52 211 153 / 16%);
+}
+
+.messagesAvatars {
+    display: flex;
+}
+
+.messagesAvatars > * {
+    margin-left: -0.5rem;
+    border: 2px solid var(--color-background-soft);
+}
+
+.messagesAvatars > *:first-child {
+    margin-left: 0;
+}
+
+.availabilityCard p,
+.messagesCard p {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 820px) {
+    .statusRow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .statusRow {
+        grid-template-columns: 1fr;
+    }
+}

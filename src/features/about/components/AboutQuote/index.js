@@ -1,0 +1,1 @@
+export { AboutQuote } from './AboutQuote'

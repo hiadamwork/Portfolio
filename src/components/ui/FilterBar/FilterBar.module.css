@@ -1,0 +1,138 @@
+.filterBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 2.5rem;
+    overflow: hidden;
+    padding: var(--space-1) var(--space-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: rgb(255 255 255 / 6%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 8%);
+}
+
+.searchButton,
+.closeSearchButton {
+    flex: 0 0 auto;
+    min-height: 1.75rem;
+    padding: 0 var(--space-2);
+    color: var(--color-primary-soft);
+    background: transparent;
+    transform: none;
+}
+
+.closeSearchButton {
+    color: var(--color-text-secondary);
+}
+
+.searchButton:hover,
+.closeSearchButton:hover {
+    color: var(--color-text-primary);
+    transform: none;
+}
+
+.searchButton svg,
+.closeSearchButton svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.searchInputContainer {
+    position: absolute;
+    inset: 0 0 0 2.5rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding-right: var(--space-2);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-10px);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s;
+}
+
+.showInput {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.searchInput {
+    flex: 1;
+    height: 100%;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.searchInput:focus {
+    box-shadow: none;
+}
+
+.filtersScroll {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: var(--space-1);
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: grab;
+    user-select: none;
+    opacity: 1;
+    transform: scale(1);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.filtersScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.filtersScroll:active {
+    cursor: grabbing;
+}
+
+.hideFilters {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(0.96);
+}
+
+.filter {
+    flex-shrink: 0;
+    min-height: 1.75rem;
+    padding: 0 var(--space-3);
+    border-color: transparent;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+    background: rgb(255 255 255 / 5%);
+    transform: none;
+}
+
+.filter:hover {
+    color: var(--color-text-primary);
+    background: rgb(255 255 255 / 10%);
+    transform: none;
+}
+
+.activeFilter,
+.activeFilter:hover {
+    color: #fff;
+    border-color: rgb(96 165 250 / 46%);
+    background: rgb(59 130 246 / 60%);
+    box-shadow: 0 0 1rem rgb(59 130 246 / 30%);
+}

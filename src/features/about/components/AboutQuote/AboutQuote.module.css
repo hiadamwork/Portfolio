@@ -1,0 +1,57 @@
+.quote {
+    position: relative;
+    margin: 0;
+    padding: var(--space-5) var(--space-3);
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    font-weight: 800;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+
+.quote::before,
+.quote::after {
+    position: absolute;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--color-primary);
+}
+
+.quote::before {
+    top: 0;
+    left: 0;
+    content: "“";
+}
+
+.quote::after {
+    right: 0;
+    bottom: -0.8rem;
+    content: "”";
+}
+
+.focusPanel {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.focusPanel h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.focusGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.focusGrid strong {
+    font-size: 0.72rem;
+}
+
+@media (max-width: 560px) {
+    .focusGrid {
+        grid-template-columns: 1fr;
+    }
+}

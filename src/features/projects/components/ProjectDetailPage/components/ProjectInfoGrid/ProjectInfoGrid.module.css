@@ -1,0 +1,41 @@
+.infoSection {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.infoSection h2 {
+    font-size: 1.3rem;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.infoCard {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-3);
+}
+
+.infoCard span {
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+}
+
+.infoCard strong {
+    font-size: 0.78rem;
+}
+
+@media (max-width: 1180px) {
+    .infoGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .infoGrid {
+        grid-template-columns: 1fr;
+    }
+}

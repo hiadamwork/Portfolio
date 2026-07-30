@@ -1,0 +1,9 @@
+.page {
+    position: relative;
+    min-height: 100vh;
+    background: var(--color-background);
+}
+
+.container {
+    padding-block: var(--space-20);
+}

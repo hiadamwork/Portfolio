@@ -1,0 +1,31 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: grid;
+    place-items: center;
+    padding: var(--space-6);
+    background: rgb(0 0 0 / 62%);
+    backdrop-filter: blur(1rem);
+}
+
+.modal {
+    width: min(100%, 34rem);
+    padding: var(--space-6);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-background-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.header h2 {
+    font-size: 1.25rem;
+}

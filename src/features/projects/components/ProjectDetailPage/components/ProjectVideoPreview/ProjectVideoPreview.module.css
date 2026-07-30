@@ -1,0 +1,37 @@
+.videoSection {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.videoSection h2 {
+    font-size: 1.05rem;
+}
+
+.videoCard {
+    display: grid;
+    min-height: 15rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 40%);
+    border-radius: var(--radius-md);
+    background:
+        radial-gradient(circle at 78% 54%, rgb(139 92 246 / 40%), transparent 9rem),
+        linear-gradient(135deg, rgb(147 197 253 / 22%), rgb(255 255 255 / 5%));
+    box-shadow: 0 0 2rem rgb(59 130 246 / 22%);
+}
+
+.playButton {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--color-text-primary);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+    box-shadow: 0 0 2rem rgb(139 92 246 / 48%);
+}
+
+.playButton svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-left: 0.1rem;
+}

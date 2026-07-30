@@ -1,0 +1,54 @@
+.process {
+    display: grid;
+    gap: var(--space-5);
+    justify-items: center;
+}
+
+.process h2 {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.processFlow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-5);
+}
+
+.processStep {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: var(--space-2);
+    width: 6rem;
+    text-align: center;
+}
+
+.processStep strong {
+    font-size: 0.78rem;
+}
+
+.processIcon {
+    display: grid;
+    width: 2.4rem;
+    height: 2.4rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: 50%;
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.processIcon svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.processConnector {
+    position: absolute;
+    top: 1.15rem;
+    left: calc(50% + 2.5rem);
+    width: 4rem;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(96 165 250 / 55%), rgb(139 92 246 / 15%));
+}

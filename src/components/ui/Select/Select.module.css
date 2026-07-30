@@ -1,0 +1,46 @@
+.selectWrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0 2.5rem 0 var(--space-4);
+    appearance: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    background: rgb(255 255 255 / 8%);
+    outline: none;
+    cursor: pointer;
+    transition:
+        border-color var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+.select:focus {
+    border-color: rgb(96 165 250 / 80%);
+    box-shadow: 0 0 1.5rem rgb(59 130 246 / 26%);
+}
+
+.select[aria-invalid="true"] {
+    border-color: var(--color-error);
+}
+
+.select option {
+    color: var(--color-text-primary);
+    background: var(--color-background-soft);
+}
+
+.chevron {
+    position: absolute;
+    top: 50%;
+    right: var(--space-3);
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+    transform: translateY(-50%);
+}

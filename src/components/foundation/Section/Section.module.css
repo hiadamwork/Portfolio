@@ -1,0 +1,43 @@
+.section {
+    width: 100%;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.surface {
+    background: var(--color-surface);
+}
+
+.background {
+    background: var(--color-background);
+}
+
+.spacing-none {
+    padding-block: 0;
+}
+
+.spacing-sm {
+    padding-block: var(--space-10);
+}
+
+.spacing-md {
+    padding-block: var(--space-16);
+}
+
+.spacing-lg {
+    padding-block: var(--space-20);
+}
+
+.spacing-xl {
+    padding-block: 8rem;
+}
+
+@media (max-width: 640px) {
+    .spacing-md,
+    .spacing-lg,
+    .spacing-xl {
+        padding-block: var(--space-12);
+    }
+}

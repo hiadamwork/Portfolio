@@ -1,0 +1,43 @@
+.emptyState {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-4);
+    max-width: 32rem;
+    margin-inline: auto;
+    padding: var(--space-16) var(--space-6);
+    text-align: center;
+}
+
+.icon {
+    display: grid;
+    width: 4rem;
+    height: 4rem;
+    place-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-primary-soft);
+    background: radial-gradient(
+        circle at 35% 30%,
+        rgb(147 197 253 / 22%),
+        rgb(59 130 246 / 8%)
+    );
+}
+
+.icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+.action {
+    margin-top: var(--space-2);
+}

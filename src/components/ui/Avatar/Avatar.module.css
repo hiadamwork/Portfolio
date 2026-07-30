@@ -1,0 +1,45 @@
+.avatar {
+    display: inline-grid;
+    flex: 0 0 auto;
+    place-items: center;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 18%);
+    border-radius: 50%;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    object-fit: cover;
+}
+
+.sm {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.75rem;
+}
+
+.md {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+}
+
+.lg {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1rem;
+}
+
+.blue {
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+}
+
+.purple {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+}
+
+.green {
+    background: linear-gradient(135deg, #047857, #34d399);
+}
+
+.yellow {
+    background: linear-gradient(135deg, #d97706, #fbbf24);
+}

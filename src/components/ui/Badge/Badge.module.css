@@ -46,3 +46,34 @@
     border-color: rgb(34 211 238 / 36%);
     background: rgb(34 211 238 / 15%);
 }
+
+.xs {
+    min-height: 1.25rem;
+    font-size: 0.75rem;
+    padding: 0 var(--space-2);
+}
+.sm {
+    min-height: 1.5rem;
+    font-size: 0.75rem;
+    padding: 0 var(--space-2);
+}
+.default {
+    min-height: 1.75rem;
+    font-size: 0.875rem;
+    padding: 0 var(--space-3);
+}
+.md {
+    min-height: 2rem;
+    font-size: 0.9375rem;
+    padding: 0 var(--space-4);
+}
+.lg {
+    min-height: 2.25rem;
+    font-size: 1rem;
+    padding: 0 var(--space-5);
+}
+.xl {
+    min-height: 2.5rem;
+    font-size: 1.0625rem;
+    padding: 0 var(--space-6);
+}

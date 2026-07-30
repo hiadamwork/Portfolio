@@ -1,129 +1,34 @@
-import { useState } from "react";
-
-import { Badge, Button, Container } from "@/components/ui";
-import { ProjectCard } from "@/features/projects/components/ProjectCard";
+import { useEffect } from "react";
+import { Container, PageLayout } from "@/components";
 import { ProjectCta } from "@/features/projects/components/ProjectCta";
-import { ProjectMockup } from "@/features/projects/components/ProjectMockup";
+import {
+    CaseStudyPreview,
+    FeaturedProjectShowcase,
+    GithubPreview,
+    ProjectFilters,
+    ProjectsGrid,
+    ProjectsHero,
+    TechStackPills,
+} from "@/features/projects/components/ProjectsPage/components";
 import {
     newProject,
     processSteps,
     projectFilters,
     projects,
+    projectsPageContent,
     projectStats,
     stackPills,
 } from "@/features/projects/data/projects";
+import { useProjectFilters } from "@/features/projects/hooks";
 
 import styles from "./ProjectsPage.module.css";
 
-function SectionHeader({ eyebrow, title, description }) {
-    return (
-        <div className={styles.sectionHeader}>
-            {eyebrow && <span>{eyebrow}</span>}
-            <h2>{title}</h2>
-            {description && <p>{description}</p>}
-        </div>
-    );
-}
-
-function FeaturedShowcase() {
-    return (
-        <article className={styles.featuredCard}>
-            <div className={styles.featuredContent}>
-                <h2>{newProject.shortTitle}</h2>
-                <p>
-                    Full-stack software developer specializing in React, modern
-                    backend systems and scalable architecture.
-                </p>
-                <div className={styles.tagList}>
-                    {newProject.tags.slice(0, 5).map((tag) => (
-                        <Badge key={tag} tone={tag === "JWT" ? "red" : "blue"}>
-                            {tag}
-                        </Badge>
-                    ))}
-                </div>
-                <div className={styles.cardActions}>
-                    <Button as="a" href="#" size="sm">
-                        Live Demo
-                    </Button>
-                    <Button as="a" href="#" size="sm" variant="secondary">
-                        GitHub
-                    </Button>
-                    <Button
-                        as="a"
-                        href="/projects/#ai-project-management-platform"
-                        size="sm"
-                        variant="secondary"
-                    >
-                        Case Study
-                    </Button>
-                </div>
-            </div>
-            <ProjectMockup className={styles.featuredMockup} />
-        </article>
-    );
-}
-
-function CaseStudyPreview() {
-    return (
-        <section className={styles.caseStudy}>
-            <SectionHeader eyebrow="Case Study" title="How I build software." />
-            <div className={styles.processGrid}>
-                {processSteps.map((step, index) => (
-                    <article className={styles.processCard} key={step.title}>
-                        <span className={styles.processIcon}>{index + 1}</span>
-                        <h3>{step.title}</h3>
-                        <p>{step.description}</p>
-                    </article>
-                ))}
-            </div>
-        </section>
-    );
-}
-
-function GithubPreview() {
-    return (
-        <section className={styles.githubGrid}>
-            <article className={styles.githubCard}>
-                <h3>Contribution preview</h3>
-                <p>
-                    Adam pushed production-ready improvements to dashboard
-                    cards.
-                </p>
-                <a href="https://github.com" rel="noreferrer" target="_blank">
-                    View contribution preview
-                </a>
-            </article>
-            <article className={styles.githubCard}>
-                <h3>Repository</h3>
-                <ul>
-                    <li>modern-cards</li>
-                    <li>reusable-components</li>
-                    <li>contribution-graph</li>
-                </ul>
-            </article>
-            <article className={styles.githubCard}>
-                <h3>Latest commits</h3>
-                <div className={styles.commitGraph}>
-                    {Array.from({ length: 35 }).map((_, index) => (
-                        <span
-                            key={index}
-                            style={{ "--height": `${28 + (index % 7) * 10}%` }}
-                        />
-                    ))}
-                </div>
-            </article>
-        </section>
-    );
-}
-
 export function ProjectsPage() {
-    const [activeFilter, setActiveFilter] = useState("All");
-    const visibleProjects =
-        activeFilter === "All"
-            ? projects
-            : projects.filter((project) =>
-                  project.categories.includes(activeFilter),
-              );
+    const projectFilter = useProjectFilters(projects);
+
+    useEffect(() => {
+        document.title = "Portfolio | Projects";
+    }, []);
 
     return (
         <div className={styles.page}>
@@ -132,85 +37,45 @@ export function ProjectsPage() {
             <div className={styles.rightGlow} />
 
             <Container className={styles.container} size="wide">
-                <header className={styles.hero}>
-                    <h1>Featured Projects</h1>
-                    <p>
-                        A collection of carefully crafted applications focused
-                        on performance, user experience and scalable
-                        architecture.
-                    </p>
-                    <div className={styles.stats}>
-                        {projectStats.map((stat) => (
-                            <div className={styles.stat} key={stat.label}>
-                                <strong>{stat.value}</strong>
-                                <span>{stat.label}</span>
-                            </div>
-                        ))}
-                    </div>
-                </header>
+                <PageLayout columns="two" gap="wide">
+                    <PageLayout.Main>
+                        <ProjectsHero
+                            content={projectsPageContent.hero}
+                            stats={projectStats}
+                        />
+                        <FeaturedProjectShowcase
+                            content={projectsPageContent.featured}
+                            project={newProject}
+                        />
 
-                <div className={styles.mainGrid}>
-                    <div className={styles.leftColumn}>
-                        <FeaturedShowcase /> 
+                        <ProjectFilters
+                            activeFilter={projectFilter.activeFilter}
+                            content={projectsPageContent.filters}
+                            filters={projectFilters}
+                            query={projectFilter.query}
+                            onFilterChange={projectFilter.setActiveFilter}
+                            onQueryChange={projectFilter.setQuery}
+                        />
 
-                        <div
-                            className={styles.filters}
-                            aria-label="Project filters"
-                        >
-                            {projectFilters.map((filter) => (
-                                <button
-                                    className={
-                                        filter === activeFilter
-                                            ? styles.activeFilter
-                                            : styles.filter
-                                    }
-                                    key={filter}
-                                    onClick={() => setActiveFilter(filter)}
-                                    type="button"
-                                >
-                                    {filter}
-                                </button>
-                            ))}
-                        </div>
+                        <ProjectsGrid
+                            content={projectsPageContent.grid}
+                            projects={projectFilter.visibleProjects}
+                        />
+                    </PageLayout.Main>
 
-                        <section
-                            className={styles.projectGrid}
-                            aria-label="Project cards"
-                        >
-                            {visibleProjects.map((project) => (
-                                <ProjectCard
-                                    key={project.slug}
-                                    project={project}
-                                />
-                            ))}
-                        </section>
-                    </div>
+                    <PageLayout.Sidebar>
+                        <CaseStudyPreview
+                            content={projectsPageContent.caseStudy}
+                            processSteps={processSteps}
+                        />
 
-                    <aside className={styles.rightColumn}>
-                        <CaseStudyPreview />
+                        <TechStackPills items={stackPills} />
 
-                        <section className={styles.stackSection}>
-                            <div className={styles.stackPills}>
-                                {stackPills.map((item) => (
-                                    <Badge
-                                        key={item}
-                                        tone={
-                                            item.includes("Java")
-                                                ? "yellow"
-                                                : "blue"
-                                        }
-                                    >
-                                        {item}
-                                    </Badge>
-                                ))}
-                            </div>
-                        </section>
-
-                        <GithubPreview />
+                        <GithubPreview content={projectsPageContent.github} />
 
                         <ProjectCta />
-                    </aside>
-                </div>
+                    </PageLayout.Sidebar>
+                </PageLayout>
             </Container>
         </div>
     );

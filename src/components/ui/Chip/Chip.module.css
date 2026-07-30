@@ -1,0 +1,51 @@
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    line-height: 1;
+    white-space: nowrap;
+    background: rgb(255 255 255 / 7%);
+}
+
+.sm {
+    min-height: 1.45rem;
+    padding: 0 var(--space-2);
+    font-size: 0.75rem;
+}
+
+.md {
+    min-height: 1.8rem;
+    padding: 0 var(--space-3);
+    font-size: 0.875rem;
+}
+
+.neutral {
+    color: var(--color-text-secondary);
+}
+
+.blue {
+    color: #93c5fd;
+    border-color: rgb(59 130 246 / 36%);
+    background: rgb(59 130 246 / 15%);
+}
+
+.green {
+    color: #bbf7d0;
+    border-color: rgb(34 197 94 / 36%);
+    background: rgb(34 197 94 / 15%);
+}
+
+.red {
+    color: #fca5a5;
+    border-color: rgb(239 68 68 / 36%);
+    background: rgb(239 68 68 / 15%);
+}
+
+.yellow {
+    color: #fde68a;
+    border-color: rgb(245 158 11 / 36%);
+    background: rgb(245 158 11 / 15%);
+}

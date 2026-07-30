@@ -1,0 +1,67 @@
+.section {
+    position: relative;
+    padding-block: var(--space-24);
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-6);
+    margin-bottom: var(--space-10);
+}
+
+.eyebrow {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary-soft);
+}
+
+.header h2 {
+    margin-top: var(--space-2);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+}
+
+.card {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 0.875rem;
+}
+
+.icon {
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(
+        circle at 35% 30%,
+        rgb(147 197 253 / 40%),
+        rgb(59 130 246 / 14%)
+    );
+}
+
+.icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+@media (max-width: 960px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

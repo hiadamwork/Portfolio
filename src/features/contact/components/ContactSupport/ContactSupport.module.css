@@ -1,0 +1,108 @@
+.reasonPanel,
+.faqCard,
+.expectationsCard {
+    display: grid;
+    align-content: start;
+    gap: var(--space-3);
+}
+
+.reasonPanel h2,
+.faqCard h2,
+.expectationsCard h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.reasonGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.miniCard,
+.faqCard,
+.expectationsList {
+    border-color: var(--color-border);
+}
+
+.miniCard {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-3);
+}
+
+.miniCard strong {
+    font-size: 0.72rem;
+}
+
+.optionIcon {
+    display: grid;
+    width: 1.8rem;
+    height: 1.8rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 40%), rgb(59 130 246 / 14%));
+}
+
+.optionIcon svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.faqCard {
+    padding: var(--space-4);
+}
+
+.faqCard details {
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.faqCard summary {
+    cursor: pointer;
+    font-size: 0.82rem;
+    color: var(--color-text-primary);
+}
+
+.faqCard p {
+    margin-top: var(--space-2);
+    font-size: 0.78rem;
+}
+
+.expectationsList {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+}
+
+.expectationsList span {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+}
+
+.expectationsList span::before {
+    content: "\2713 ";
+    color: var(--color-primary-soft);
+}
+
+.expectationsCard blockquote {
+    margin: var(--space-4) 0 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@media (max-width: 820px) {
+    .reasonGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .reasonGrid {
+        grid-template-columns: 1fr;
+    }
+}

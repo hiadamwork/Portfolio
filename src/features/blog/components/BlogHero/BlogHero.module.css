@@ -1,0 +1,33 @@
+.hero {
+    display: grid;
+    max-width: 42rem;
+    gap: var(--space-3);
+}
+
+.lead {
+    max-width: 38rem;
+}
+
+.description {
+    max-width: 35rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    padding-top: var(--space-2);
+}
+
+.updatedBadge {
+    gap: var(--space-2);
+}
+
+.statusDot {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-primary-soft);
+    box-shadow: 0 0 0.75rem rgb(96 165 250 / 70%);
+}

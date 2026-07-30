@@ -1,0 +1,51 @@
+.section {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.card {
+    display: grid;
+    gap: var(--space-3);
+    padding: var(--space-6);
+    overflow: hidden;
+    border: 1px solid rgb(147 197 253 / 42%);
+    border-radius: var(--radius-xl);
+    background:
+        radial-gradient(circle at 82% 15%, rgb(255 255 255 / 25%), transparent 8rem),
+        radial-gradient(circle at 18% 100%, rgb(34 211 238 / 32%), transparent 10rem),
+        linear-gradient(135deg, #60a5fa, #2563eb 52%, #8b5cf6);
+    box-shadow: 0 0 2.8rem rgb(59 130 246 / 32%);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-2);
+    min-height: 2rem;
+    padding: 0.18rem;
+    border: 1px solid rgb(255 255 255 / 24%);
+    border-radius: var(--radius-pill);
+    background: rgb(255 255 255 / 18%);
+    backdrop-filter: blur(1rem);
+}
+
+.input {
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    padding: 0 var(--space-3);
+    color: var(--color-text-primary);
+    background: transparent;
+}
+
+.input::placeholder {
+    color: rgb(255 255 255 / 72%);
+}
+
+@media (max-width: 420px) {
+    .form {
+        grid-template-columns: 1fr;
+        padding: var(--space-2);
+        border-radius: var(--radius-lg);
+    }
+}

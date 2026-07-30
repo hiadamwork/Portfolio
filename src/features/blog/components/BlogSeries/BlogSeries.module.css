@@ -1,0 +1,75 @@
+.section {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-3);
+}
+
+.icon {
+    display: grid;
+    min-height: 5rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 28%);
+    border-radius: var(--radius-md);
+    color: var(--color-primary-soft);
+    background:
+        radial-gradient(circle at 35% 30%, rgb(147 197 253 / 46%), transparent 35%),
+        linear-gradient(135deg, rgb(59 130 246 / 18%), rgb(139 92 246 / 22%));
+}
+
+.icon svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.progressRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: auto;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.progress {
+    gap: 0;
+}
+
+.progress > span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.progress [role="progressbar"] {
+    height: 0.35rem;
+    overflow: hidden;
+    border-radius: var(--radius-pill);
+    background: rgb(255 255 255 / 10%);
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

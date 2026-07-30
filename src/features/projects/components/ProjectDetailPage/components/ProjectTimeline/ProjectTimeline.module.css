@@ -1,0 +1,59 @@
+.timeline {
+    display: grid;
+    gap: var(--space-3);
+    justify-items: center;
+}
+
+.timeline h2 {
+    display: none;
+}
+
+.timelineList {
+    position: relative;
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0 0 0 1.1rem;
+    list-style: none;
+}
+
+.timelineList::before {
+    position: absolute;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 1.1rem;
+    width: 1px;
+    content: "";
+    background: linear-gradient(180deg, var(--color-primary), var(--color-purple));
+}
+
+.timelineItem {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.timelineItem span:last-child {
+    font-size: 0.72rem;
+    color: var(--color-text-secondary);
+}
+
+.timelineIcon {
+    display: grid;
+    flex: 0 0 auto;
+    width: 1.45rem;
+    height: 1.45rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 42%);
+    border-radius: 50%;
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 46%), rgb(15 15 20 / 100%));
+    box-shadow: 0 0 1rem rgb(59 130 246 / 40%);
+}
+
+.timelineIcon svg {
+    width: 0.72rem;
+    height: 0.72rem;
+}

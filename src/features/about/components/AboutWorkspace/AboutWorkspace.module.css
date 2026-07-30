@@ -1,0 +1,59 @@
+.workspace {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.workspace h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.workspaceCard {
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    border: 1px solid rgb(147 197 253 / 42%);
+}
+
+.mockup {
+    display: grid;
+    min-height: 7rem;
+    border-radius: var(--radius-sm);
+    background:
+        radial-gradient(circle at 20% 25%, rgb(255 255 255 / 75%), transparent 18%),
+        linear-gradient(135deg, #dbeafe, #64748b 48%, #111827);
+}
+
+.stats {
+    display: grid;
+    gap: var(--space-2);
+}
+
+.statCard {
+    padding: var(--space-3);
+    text-align: center;
+}
+
+.statCard strong {
+    font-size: 1.25rem;
+    color: #8fb7ff;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.facts strong {
+    font-size: 0.68rem;
+}
+
+@media (max-width: 560px) {
+    .workspaceCard,
+    .facts {
+        grid-template-columns: 1fr;
+    }
+}

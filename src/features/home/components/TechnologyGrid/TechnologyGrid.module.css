@@ -1,0 +1,44 @@
+.section {
+    position: relative;
+    padding-block: var(--space-24);
+    background: var(--color-background-soft);
+}
+
+.header {
+    max-width: 36rem;
+    margin-bottom: var(--space-10);
+}
+
+.eyebrow {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary-soft);
+}
+
+.header h2 {
+    margin-top: var(--space-2);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+}
+
+.description {
+    margin-top: var(--space-3);
+}
+
+.card {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}

@@ -1,0 +1,112 @@
+.formPanel {
+    padding: var(--space-5);
+    border: 1px solid rgb(147 197 253 / 54%);
+    box-shadow: 0 0 2.75rem rgb(59 130 246 / 24%), 0 0 2.5rem rgb(139 92 246 / 18%);
+}
+
+.form,
+.form label {
+    display: grid;
+    gap: var(--space-2);
+}
+
+.form {
+    gap: var(--space-3);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.form label {
+    font-size: 0.82rem;
+    color: var(--color-text-primary);
+}
+
+.form label span,
+.formError {
+    color: #fca5a5;
+    font-size: 0.8rem;
+}
+
+.fileInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.fileInput {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fileName {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    min-height: 2.55rem;
+    padding: 0 var(--space-3);
+    border: 1px dashed rgb(255 255 255 / 8%);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    background: rgb(255 255 255 / 4%);
+}
+
+.clearFile {
+    flex: 0 0 auto;
+    min-width: 2.55rem;
+    height: 2.55rem;
+    border: 1px solid rgb(255 255 255 / 8%);
+    border-radius: 0.65rem;
+    color: var(--color-text-secondary);
+    background: transparent;
+    transform: none;
+}
+
+.clearFile:hover {
+    transform: none;
+}
+
+.privacyLink {
+    color: var(--color-primary-soft);
+    text-decoration: underline;
+}
+
+.checkbox {
+    display: flex !important;
+    align-items: center;
+}
+
+.checkbox input {
+    width: 1rem;
+    min-height: 1rem;
+}
+
+.submitButton {
+    min-height: 3rem;
+    border-radius: var(--radius-pill);
+    color: var(--color-text-primary);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+    box-shadow: 0 1rem 2.5rem rgb(59 130 246 / 32%);
+}
+
+.submitButton:disabled {
+    cursor: wait;
+    opacity: 0.72;
+}
+
+.formSuccess {
+    color: #86efac;
+}
+
+@media (max-width: 560px) {
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+}

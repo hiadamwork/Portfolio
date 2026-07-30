@@ -1,0 +1,82 @@
+.processSection {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.processSection h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.processTimeline {
+    position: relative;
+    display: grid;
+    gap: var(--space-3);
+    width: 100%;
+    max-width: 44rem;
+    margin: 0;
+    padding: 0 0 0 1.35rem;
+    list-style: none;
+}
+
+.processTimeline::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 1.35rem;
+    width: 1px;
+    background: linear-gradient(180deg, rgb(96 165 250 / 60%), rgb(139 92 246 / 20%));
+}
+
+.processItem {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: var(--space-3);
+}
+
+.processIcon {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border: 1px solid rgb(147 197 253 / 42%);
+    border-radius: 50%;
+    color: var(--color-primary-soft);
+    background: radial-gradient(circle at 35% 30%, rgb(147 197 253 / 46%), rgb(15 15 20 / 100%));
+    box-shadow: 0 0 1rem rgb(59 130 246 / 40%);
+}
+
+.processIcon svg {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.processContent {
+    display: grid;
+    gap: 0.2rem;
+    padding-top: 0.35rem;
+}
+
+.processStepLabel {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.processContent p {
+    font-size: 0.72rem;
+    line-height: 1.35;
+}
+
+.processContent strong {
+    font-size: 0.9rem;
+}
