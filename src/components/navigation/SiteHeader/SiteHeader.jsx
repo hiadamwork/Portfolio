@@ -82,9 +82,9 @@ export function SiteHeader() {
                         </a>
                     ))}
 
-                    <a className={styles.cvLink} href="/Adam-CV.pdf">
+                    {/*<a className={styles.cvLink} href="/Adam-CV.pdf">
                         Download CV
-                    </a>
+                    </a>*/}
                 </div>
 
                 {isMenuOpen && (
@@ -122,13 +122,13 @@ export function SiteHeader() {
                                     {item.icon}
                                 </a>
                             ))}
-                            <a
+                            {/*<a
                                 className={styles.mobileCvLink}
                                 href="/Adam-CV.pdf"
                                 onClick={handleCloseMenu}
                             >
                                 Download CV
-                            </a>
+                            </a>*/}
                         </div>
                     </div>
                 )}
