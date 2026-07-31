@@ -15,7 +15,7 @@ const SOCIAL_LINKS = [
     },
     {
         label: "LinkedIn",
-        href: "https://linkedin.com/in/adamdlugos",
+        href: "https://linkedin.com/in/adamwork",
         icon: <DynamicIcon name="linkedin" />,
     },
 ];
