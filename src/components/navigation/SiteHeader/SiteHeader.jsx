@@ -10,7 +10,7 @@ import styles from "./SiteHeader.module.css";
 const SOCIAL_LINKS = [
     {
         label: "GitHub",
-        href: "https://github.com/heyadam05",
+        href: "https://github.com/hiadamwork",
         icon: <DynamicIcon name="github" />,
     },
     {
