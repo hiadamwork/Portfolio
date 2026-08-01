@@ -53,6 +53,7 @@ export function ProjectCard({ compact = false, project }) {
                     to={buildProjectDetailPath(project.slug)}
                     size="sm"
                     variant="secondary"
+                    target="_blank"
                 >
                     Case Study
                 </Button>
