@@ -1575,7 +1575,7 @@ export const projects = [
         timeline: baseTimeline,
         date: "2025-08-15",
         githubUrl: "https://github.com/hiadamwork/SkyCast",
-        liveUrl: "https://heyskycast.netlify.app/",
+        liveUrl: "https://hiskycast.netlify.app/",
     },
 
     {
