@@ -38,6 +38,7 @@ export function ProjectCard({ compact = false, project }) {
                     className={compact ? styles.compactButton : undefined}
                     href={project.liveUrl || '#'}
                     size="sm"
+                    target="_blank"
                 >
                     Live
                 </Button>

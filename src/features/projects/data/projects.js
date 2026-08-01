@@ -132,7 +132,7 @@ export const projects = [
         slug: "devvault",
         description:
             "A command-line C++ application for keeping a personal archive of software projects. Helps you add, search, filter, archive, mark favorites, view statistics, export reports, and create backups.",
-        categories: ["C++", "CLI", "Desktop"],
+        categories: ["C++", "CLI", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2 Months",
         platform: "Command-Line Application",
@@ -216,6 +216,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-01-15",
+        githubUrl: "https://github.com/hiadamwork/DevVault",
     },
 
     {
@@ -224,7 +225,7 @@ export const projects = [
         slug: "download-manager",
         description:
             "A Windows WPF desktop application built with C# and .NET 10. Manages file downloads, queues, history, statistics, settings, and local SQLite persistence through a practical dashboard-style UI.",
-        categories: ["C#", "WPF", "Desktop"],
+        categories: ["C#", "WPF", "Desktop", "Open Source"],
         role: "Full Stack Developer",
         duration: "3 Months",
         platform: "Windows Desktop Application",
@@ -304,6 +305,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-02-01",
+        githubUrl: "https://github.com/hiadamwork/DownloadManager",
     },
 
     {
@@ -312,7 +314,7 @@ export const projects = [
         slug: "focusflow",
         description:
             "A Windows WPF desktop productivity app built with C#, MVVM, Entity Framework Core, and SQLite. Combines focus sessions, task tracking, projects, goals, statistics, and session history in one local desktop dashboard.",
-        categories: ["C#", "WPF", "Desktop"],
+        categories: ["C#", "WPF", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2 Months",
         platform: "Windows Desktop Application",
@@ -392,6 +394,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-03-01",
+        githubUrl: "https://github.com/hiadamwork/FocusFlow",
     },
 
     {
@@ -400,7 +403,7 @@ export const projects = [
         slug: "habit-tracker",
         description:
             "A modern, responsive habit-tracking application built with React and TypeScript. Helps users create routines, record daily progress, maintain streaks, review calendar history, and understand long-term completion trends.",
-        categories: ["React", "Frontend", "TypeScript"],
+        categories: ["React", "Frontend", "TypeScript", "Open Source"],
         role: "Frontend Developer",
         duration: "3 Months",
         platform: "Web Application",
@@ -486,6 +489,8 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-04-01",
+        githubUrl: "https://github.com/hiadamwork/HabitTracker",
+        liveUrl: "https://heyhabittracker.netlify.app/",
     },
 
     {
@@ -575,7 +580,7 @@ export const projects = [
         ],
         performance: basePerformance,
         timeline: baseTimeline,
-        date: "2025-05-01",
+        date: "2025-05-01"
     },
 
     {
@@ -584,7 +589,7 @@ export const projects = [
         slug: "launchworkspace",
         description:
             "A Windows WPF desktop workspace launcher built with C#, MVVM, Entity Framework Core, and SQLite. Helps developers start a project environment from one place: applications, folders, URLs, commands, environment variables, and launch history.",
-        categories: ["C#", "WPF", "Desktop"],
+        categories: ["C#", "WPF", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2 Months",
         platform: "Windows Desktop Application",
@@ -662,6 +667,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-06-01",
+        githubUrl: "https://github.com/hiadamwork/LaunchWorkspace",
     },
 
     {
@@ -670,7 +676,7 @@ export const projects = [
         slug: "lifegrid",
         description:
             "A modular C++17 implementation of Conway's Game of Life. Provides a command-line simulator, built-in patterns, map loading and saving, statistics, wrap-around edges, cycle detection, image export, and automated tests.",
-        categories: ["C++", "CLI", "Desktop"],
+        categories: ["C++", "CLI", "Desktop", "Open Source"],
         role: "Developer",
         duration: "1.5 Months",
         platform: "Command-Line Application",
@@ -749,6 +755,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-02-15",
+        githubUrl: "https://github.com/hiadamwork/LifeGrid"
     },
 
     {
@@ -757,7 +764,7 @@ export const projects = [
         slug: "mini-file-explorer",
         description:
             "A portable C++17 command-line file manager. Provides a small shell-like interface for navigating directories, inspecting files, and running common filesystem operations without leaving the application.",
-        categories: ["C++", "CLI", "Desktop"],
+        categories: ["C++", "CLI", "Desktop", "Open Source"],
         role: "Developer",
         duration: "1.5 Months",
         platform: "Command-Line Application",
@@ -835,6 +842,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-03-15",
+        githubUrl: "https://github.com/hiadamwork/MiniFileExplorer"
     },
 
     {
@@ -843,7 +851,7 @@ export const projects = [
         slug: "movie-explorer",
         description:
             "A responsive movie discovery application built with React and TypeScript. Uses the TMDB API to provide current movie data, artwork, trailers, cast information, recommendations, and actor filmographies.",
-        categories: ["React", "Frontend", "TypeScript"],
+        categories: ["React", "Frontend", "TypeScript", "Open Source"],
         role: "Frontend Developer",
         duration: "3 Months",
         platform: "Web Application",
@@ -927,6 +935,8 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-07-01",
+        githubUrl: "https://github.com/hiadamwork/MovieExplorer",
+        liveUrl: "https://heymovieexplorer.netlify.app/",
     },
 
     {
@@ -935,7 +945,7 @@ export const projects = [
         slug: "music-search",
         description:
             "A modern, responsive music discovery application powered by the iTunes Search API. Search for songs, albums, and music videos, listen to 30-second previews, explore album tracklists, and save favorite tracks directly in the browser.",
-        categories: ["React", "Frontend", "TypeScript"],
+        categories: ["React", "Frontend", "TypeScript", "Open Source"],
         role: "Frontend Developer",
         duration: "2.5 Months",
         platform: "Web Application",
@@ -1019,6 +1029,8 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-08-01",
+        githubUrl: "https://github.com/hiadamwork/MusicSearch",
+        liveUrl: "https://heymusicsearch.netlify.app/",
     },
 
     {
@@ -1027,7 +1039,7 @@ export const projects = [
         slug: "noteflow",
         description:
             "A responsive notes workspace built with React, TypeScript, Express, Prisma, and PostgreSQL. User accounts, sessions, notes, categories, tags, trash, and settings are persisted in PostgreSQL.",
-        categories: ["React", "Backend", "Frontend"],
+        categories: ["React", "Backend", "Frontend", "Open Source"],
         role: "Full Stack Developer",
         duration: "3 Months",
         platform: "Web Application",
@@ -1112,6 +1124,8 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-09-01",
+        githubUrl: "https://github.com/hiadamwork/NoteFlow",
+        liveUrl: "https://heynoteflow.netlify.app/",
     },
 
     {
@@ -1120,7 +1134,7 @@ export const projects = [
         slug: "passwordvault",
         description:
             "A local command-line password manager written in modern C++ for Windows. Stores credentials in one authenticated encrypted vault protected by a master password.",
-        categories: ["C++", "CLI", "Desktop"],
+        categories: ["C++", "CLI", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2 Months",
         platform: "Command-Line Application",
@@ -1199,6 +1213,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-04-15",
+        githubUrl: "https://github.com/hiadamwork/PasswordVault",
     },
 
     {
@@ -1207,7 +1222,7 @@ export const projects = [
         slug: "pixelforge",
         description:
             "A Windows WPF desktop image processing studio built with C# and .NET. Designed as a portfolio-grade application for converting, resizing, compressing, watermarking, and batch processing images through a clean MVVM architecture.",
-        categories: ["C#", "WPF", "Desktop"],
+        categories: ["C#", "WPF", "Desktop", "Open Source"],
         role: "Developer",
         duration: "3 Months",
         platform: "Windows Desktop Application",
@@ -1288,6 +1303,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-05-15",
+        githubUrl: "https://github.com/hiadamwork/PixelForge",
     },
 
     {
@@ -1296,7 +1312,7 @@ export const projects = [
         slug: "project-archive",
         description:
             "A Windows WPF desktop application for developers who want one local place to track software projects. Stores project metadata, technologies, tags, notes, links, progress, ratings, favorites, estimated hours, actual hours, and archive state in SQLite.",
-        categories: ["C#", "WPF", "Desktop"],
+        categories: ["C#", "WPF", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2 Months",
         platform: "Windows Desktop Application",
@@ -1374,6 +1390,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-06-15",
+        githubUrl: "https://github.com/hiadamwork/ProjectArchive",
     },
 
     {
@@ -1382,7 +1399,7 @@ export const projects = [
         slug: "qr-studio",
         description:
             "A Windows WPF desktop application for creating, managing, previewing, and exporting QR codes. Built as a portfolio-grade C# project with MVVM structure, local SQLite persistence, validation, reusable templates, search, filtering, statistics, and PNG export.",
-        categories: ["C#", "WPF", "Desktop"],
+        categories: ["C#", "WPF", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2.5 Months",
         platform: "Windows Desktop Application",
@@ -1463,6 +1480,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-07-15",
+        githubUrl: "https://github.com/hiadamwork/QRStudio",
     },
 
     {
@@ -1471,7 +1489,7 @@ export const projects = [
         slug: "skycast",
         description:
             "A modern React weather dashboard built with Vite. Uses OpenWeather APIs for live weather, city search, hourly forecasts, multi-day forecast cards, and air quality data.",
-        categories: ["React", "Frontend", "TypeScript"],
+        categories: ["React", "Frontend", "TypeScript", "Open Source"],
         role: "Frontend Developer",
         duration: "2 Months",
         platform: "Web Application",
@@ -1556,6 +1574,8 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-08-15",
+        githubUrl: "https://github.com/hiadamwork/SkyCast",
+        liveUrl: "https://heyskycast.netlify.app/",
     },
 
     {
@@ -1564,7 +1584,7 @@ export const projects = [
         slug: "stockflow",
         description:
             "A dependency-free C++17 command-line inventory manager. Keeps products, categories, stock movements, reports, imports, exports, backups, and audit logs in a clean local workflow.",
-        categories: ["C++", "CLI", "Desktop"],
+        categories: ["C++", "CLI", "Desktop", "Open Source"],
         role: "Developer",
         duration: "2 Months",
         platform: "Command-Line Application",
@@ -1645,6 +1665,7 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-09-15",
+        githubUrl: "https://github.com/hiadamwork/StockFlow",
     },
 
     {
@@ -1653,7 +1674,7 @@ export const projects = [
         slug: "world-explorer",
         description:
             "A React portfolio application for discovering, filtering, comparing, and saving countries.",
-        categories: ["React", "Frontend", "TypeScript"],
+        categories: ["React", "Frontend", "TypeScript", "Open Source"],
         role: "Frontend Developer",
         duration: "1.5 Months",
         platform: "Web Application",
@@ -1730,6 +1751,8 @@ export const projects = [
         performance: basePerformance,
         timeline: baseTimeline,
         date: "2025-10-01",
+        githubUrl: "https://github.com/hiadamwork/WorldExplorer",
+        liveUrl: "https://heyworldexplorer.netlify.app/",
     },
 ];
 
