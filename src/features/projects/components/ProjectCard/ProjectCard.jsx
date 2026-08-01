@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import { Badge, Button, Card, Heading, Text } from '@/components'
-import { ProjectMockup } from '@/features/projects/components/ProjectMockup'
-import { buildProjectDetailPath } from '@/app/router/routes'
-import { cx } from '@/utils/cx'
+import { Badge, Button, Card, Heading, Text } from "@/components";
+import { ProjectMockup } from "@/features/projects/components/ProjectMockup";
+import { buildProjectDetailPath } from "@/app/router/routes";
+import { cx } from "@/utils/cx";
 
-import styles from './ProjectCard.module.css'
+import styles from "./ProjectCard.module.css";
 
 export function ProjectCard({ compact = false, project }) {
     return (
@@ -13,7 +13,7 @@ export function ProjectCard({ compact = false, project }) {
             className={cx(styles.card, compact && styles.compact)}
             interactive
             padding="none"
-            radius={compact ? 'md' : 'lg'}
+            radius={compact ? "md" : "lg"}
         >
             <ProjectMockup compact variant={project.variant} />
 
@@ -26,7 +26,10 @@ export function ProjectCard({ compact = false, project }) {
 
             <div className={styles.tags}>
                 {project.tags.slice(0, compact ? 2 : 3).map((tag) => (
-                    <Badge key={tag} tone={tag.includes('Java') ? 'yellow' : 'blue'}>
+                    <Badge
+                        key={tag}
+                        tone={tag.includes("Java") ? "yellow" : "blue"}
+                    >
                         {tag}
                     </Badge>
                 ))}
@@ -36,15 +39,21 @@ export function ProjectCard({ compact = false, project }) {
                 <Button
                     as="a"
                     className={compact ? styles.compactButton : undefined}
-                    href={project.liveUrl || '#'}
+                    href={project.liveUrl || "#"}
                     size="sm"
                     target="_blank"
                 >
                     Live
                 </Button>
                 {!compact ? (
-                    <Button as="a" href={project.githubUrl || '#'} size="sm" variant="secondary">
-                    GitHub
+                    <Button
+                        as="a"
+                        href={project.githubUrl || "#"}
+                        size="sm"
+                        variant="secondary"
+                        target="_blank"
+                    >
+                        GitHub
                     </Button>
                 ) : null}
                 <Button
@@ -53,11 +62,10 @@ export function ProjectCard({ compact = false, project }) {
                     to={buildProjectDetailPath(project.slug)}
                     size="sm"
                     variant="secondary"
-                    target="_blank"
                 >
                     Case Study
                 </Button>
             </div>
         </Card>
-    )
+    );
 }
