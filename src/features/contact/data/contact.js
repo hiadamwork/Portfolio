@@ -24,7 +24,7 @@ export const contactMethods = [
 ]
 
 export const socialLinks = [
-    { label: 'GitHub', href: 'https://github.com/heyadam05', icon: 'github' },
+    { label: 'GitHub', href: 'https://github.com/hiadamwork', icon: 'github' },
     { label: 'LinkedIn', href: 'https://linkedin.com/in/adamdlugos', icon: 'linkedin' },
     { label: 'Fiverr', href: 'https://fiverr.com', icon: 'externalLink' },
     { label: 'Upwork', href: 'https://upwork.com', icon: 'externalLink' },

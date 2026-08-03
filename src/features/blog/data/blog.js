@@ -68,7 +68,7 @@ export const blogPageContent = {
             },
             {
                 label: 'GitHub',
-                href: 'https://github.com/heyadam05',
+                href: 'https://github.com/hiadamwork',
                 type: 'external',
             },
             {
